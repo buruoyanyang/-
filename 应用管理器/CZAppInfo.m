@@ -28,16 +28,12 @@
     //获取plist链接
     NSString *path = [bundle pathForResource:@"app" ofType:@"plist"];
     //加载plist
-    //        _appInfos = [NSArray arrayWithContentsOfFile:path];
     NSArray *dicArray = [NSArray arrayWithContentsOfFile:path];
     //字典转模型
     //封装
     NSMutableArray *tempArray = [NSMutableArray array];
     for (NSDictionary *dic in dicArray)
     {
-        //            CZAppInfo *appInfo = [[CZAppInfo alloc] init];
-        //            appInfo.name = dic[@"name"];
-        //            appInfo.icon = dic[@"icon"];
         CZAppInfo *appInfo = [CZAppInfo appInfoWithDic:dic];
         [tempArray addObject:appInfo];
         

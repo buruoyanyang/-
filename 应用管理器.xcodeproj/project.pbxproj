@@ -12,6 +12,7 @@
 		3AE11F8B1C45FCE000F3E67E /* buttongreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE11F881C45FCE000F3E67E /* buttongreen.png */; };
 		3AE11F8D1C4602C600F3E67E /* CZAppInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AE11F8C1C4602C600F3E67E /* CZAppInfoView.xib */; };
 		E339C3E31C454AFC00DEAF9B /* CZAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E339C3E21C454AFC00DEAF9B /* CZAppInfo.m */; };
+		E3409F3F1C467B9A0063EF40 /* CZAppInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3409F3E1C467B9A0063EF40 /* CZAppInfoView.m */; };
 		E36987261C453004004DDF90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E36987251C453004004DDF90 /* main.m */; };
 		E36987291C453004004DDF90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E36987281C453004004DDF90 /* AppDelegate.m */; };
 		E369872C1C453004004DDF90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E369872B1C453004004DDF90 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 		3AE11F8C1C4602C600F3E67E /* CZAppInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZAppInfoView.xib; sourceTree = "<group>"; };
 		E339C3E11C454AFC00DEAF9B /* CZAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAppInfo.h; sourceTree = "<group>"; };
 		E339C3E21C454AFC00DEAF9B /* CZAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZAppInfo.m; sourceTree = "<group>"; };
+		E3409F3D1C467B9A0063EF40 /* CZAppInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAppInfoView.h; sourceTree = "<group>"; };
+		E3409F3E1C467B9A0063EF40 /* CZAppInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZAppInfoView.m; sourceTree = "<group>"; };
 		E36987211C453004004DDF90 /* 应用管理器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "应用管理器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36987251C453004004DDF90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E36987271C453004004DDF90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,6 +53,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3409F401C46A07C0063EF40 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E3409F451C46A0DF0063EF40 /* Other */,
+				E3409F431C46A0BD0063EF40 /* View */,
+				E3409F421C46A0990063EF40 /* Controller */,
+				E3409F411C46A0900063EF40 /* Model */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E3409F411C46A0900063EF40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E339C3E11C454AFC00DEAF9B /* CZAppInfo.h */,
+				E339C3E21C454AFC00DEAF9B /* CZAppInfo.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E3409F421C46A0990063EF40 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E369872A1C453004004DDF90 /* ViewController.h */,
+				E369872B1C453004004DDF90 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E3409F431C46A0BD0063EF40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3AE11F8C1C4602C600F3E67E /* CZAppInfoView.xib */,
+				E3409F3D1C467B9A0063EF40 /* CZAppInfoView.h */,
+				E3409F3E1C467B9A0063EF40 /* CZAppInfoView.m */,
+				E369872D1C453004004DDF90 /* Main.storyboard */,
+				E36987321C453004004DDF90 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E3409F451C46A0DF0063EF40 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E36987271C453004004DDF90 /* AppDelegate.h */,
+				E36987281C453004004DDF90 /* AppDelegate.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 		E36987181C453004004DDF90 = {
 			isa = PBXGroup;
 			children = (
@@ -69,18 +122,8 @@
 		E36987231C453004004DDF90 /* 应用管理器 */ = {
 			isa = PBXGroup;
 			children = (
-				E36987271C453004004DDF90 /* AppDelegate.h */,
-				E36987281C453004004DDF90 /* AppDelegate.m */,
-				E369872A1C453004004DDF90 /* ViewController.h */,
-				E369872B1C453004004DDF90 /* ViewController.m */,
-				E369872D1C453004004DDF90 /* Main.storyboard */,
-				E36987301C453004004DDF90 /* Assets.xcassets */,
-				E36987321C453004004DDF90 /* LaunchScreen.storyboard */,
-				E36987351C453004004DDF90 /* Info.plist */,
-				3AE11F8C1C4602C600F3E67E /* CZAppInfoView.xib */,
+				E3409F401C46A07C0063EF40 /* Classes */,
 				E36987241C453004004DDF90 /* Supporting Files */,
-				E339C3E11C454AFC00DEAF9B /* CZAppInfo.h */,
-				E339C3E21C454AFC00DEAF9B /* CZAppInfo.m */,
 			);
 			path = "应用管理器";
 			sourceTree = "<group>";
@@ -88,6 +131,8 @@
 		E36987241C453004004DDF90 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E36987301C453004004DDF90 /* Assets.xcassets */,
+				E36987351C453004004DDF90 /* Info.plist */,
 				3AE11F861C45FCE000F3E67E /* app.plist */,
 				3AE11F871C45FCE000F3E67E /* buttongreen_highlighted.png */,
 				3AE11F881C45FCE000F3E67E /* buttongreen.png */,
@@ -175,6 +220,7 @@
 				E369872C1C453004004DDF90 /* ViewController.m in Sources */,
 				E36987291C453004004DDF90 /* AppDelegate.m in Sources */,
 				E36987261C453004004DDF90 /* main.m in Sources */,
+				E3409F3F1C467B9A0063EF40 /* CZAppInfoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
