@@ -30,24 +30,35 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     //动态生成九宫格方块
+    CGFloat subViewWidth = 100;
+    CGFloat subViewHeight = 100;
+    CGFloat marginX = (self.view.frame.size.width - 3 * subViewWidth) / 4;
+    CGFloat marginY = 20;
     for (int i = 0;i < self.appInfos.count; i++) {
         //动态生成view
-        UIView *subView = [[UIView alloc] init];
+        //从xib中加载view
+        NSBundle *bundle = [NSBundle mainBundle];
+        //加载xib中的view
+        UIView *subView = [[bundle loadNibNamed:@"CZAppInfoView" owner:nil options:nil] lastObject];
+        [self.view addSubview:subView];
         //添加view
         [self.view addSubview:subView];
         //计算frame
-        CGFloat subViewWidth = 100;
-        CGFloat subViewHeight = 100;
-        CGFloat marginX = (self.view.frame.size.width - 3 * subViewWidth) / 4;
-        CGFloat marginY = 20;
+        
         int row = i / 3;
         int column = i % 3;
         CGFloat subViewX = marginX + column *(marginX + subViewWidth);
         CGFloat subViewY = 30 + row * (marginY + subViewHeight);
         subView.frame =CGRectMake(subViewX, subViewY, subViewWidth, subViewHeight);
-        subView.backgroundColor = [UIColor whiteColor];
+        
         CZAppInfo *appInfo = self.appInfos[i];
-        [self displayAppInfo:appInfo subView:subView];
+        //给view中的控件赋值
+        //方式1
+        UIImageView *iconView =  subView.subviews[0];
+        iconView.image = [UIImage imageNamed:appInfo.icon];
+        //方式2
+        UILabel *nameView = (UILabel*)[subView viewWithTag:10];
+        nameView.text = appInfo.name;
     }
 }
 -(void)displayAppInfo:(CZAppInfo *)appInfo subView:(UIView *)subView

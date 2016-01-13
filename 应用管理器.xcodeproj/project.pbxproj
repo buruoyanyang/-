@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AE11F891C45FCE000F3E67E /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AE11F861C45FCE000F3E67E /* app.plist */; };
+		3AE11F8A1C45FCE000F3E67E /* buttongreen_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE11F871C45FCE000F3E67E /* buttongreen_highlighted.png */; };
+		3AE11F8B1C45FCE000F3E67E /* buttongreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE11F881C45FCE000F3E67E /* buttongreen.png */; };
+		3AE11F8D1C4602C600F3E67E /* CZAppInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AE11F8C1C4602C600F3E67E /* CZAppInfoView.xib */; };
 		E339C3E31C454AFC00DEAF9B /* CZAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E339C3E21C454AFC00DEAF9B /* CZAppInfo.m */; };
 		E36987261C453004004DDF90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E36987251C453004004DDF90 /* main.m */; };
 		E36987291C453004004DDF90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E36987281C453004004DDF90 /* AppDelegate.m */; };
@@ -14,12 +18,13 @@
 		E369872F1C453004004DDF90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E369872D1C453004004DDF90 /* Main.storyboard */; };
 		E36987311C453004004DDF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E36987301C453004004DDF90 /* Assets.xcassets */; };
 		E36987341C453004004DDF90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E36987321C453004004DDF90 /* LaunchScreen.storyboard */; };
-		E369873E1C4530EC004DDF90 /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = E369873B1C4530EC004DDF90 /* app.plist */; };
-		E369873F1C4530EC004DDF90 /* buttongreen_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = E369873C1C4530EC004DDF90 /* buttongreen_highlighted.png */; };
-		E36987401C4530EC004DDF90 /* buttongreen.png in Resources */ = {isa = PBXBuildFile; fileRef = E369873D1C4530EC004DDF90 /* buttongreen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3AE11F861C45FCE000F3E67E /* app.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = app.plist; sourceTree = "<group>"; };
+		3AE11F871C45FCE000F3E67E /* buttongreen_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttongreen_highlighted.png; sourceTree = "<group>"; };
+		3AE11F881C45FCE000F3E67E /* buttongreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttongreen.png; sourceTree = "<group>"; };
+		3AE11F8C1C4602C600F3E67E /* CZAppInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZAppInfoView.xib; sourceTree = "<group>"; };
 		E339C3E11C454AFC00DEAF9B /* CZAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAppInfo.h; sourceTree = "<group>"; };
 		E339C3E21C454AFC00DEAF9B /* CZAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZAppInfo.m; sourceTree = "<group>"; };
 		E36987211C453004004DDF90 /* 应用管理器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "应用管理器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,9 +37,6 @@
 		E36987301C453004004DDF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E36987331C453004004DDF90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E36987351C453004004DDF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E369873B1C4530EC004DDF90 /* app.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = app.plist; path = "../../../../Downloads/day03 %28应用管理%29/资料/app.plist"; sourceTree = "<group>"; };
-		E369873C1C4530EC004DDF90 /* buttongreen_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttongreen_highlighted.png; path = "../../../../Downloads/day03 %28应用管理%29/资料/buttongreen_highlighted.png"; sourceTree = "<group>"; };
-		E369873D1C4530EC004DDF90 /* buttongreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttongreen.png; path = "../../../../Downloads/day03 %28应用管理%29/资料/buttongreen.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				E36987301C453004004DDF90 /* Assets.xcassets */,
 				E36987321C453004004DDF90 /* LaunchScreen.storyboard */,
 				E36987351C453004004DDF90 /* Info.plist */,
+				3AE11F8C1C4602C600F3E67E /* CZAppInfoView.xib */,
 				E36987241C453004004DDF90 /* Supporting Files */,
 				E339C3E11C454AFC00DEAF9B /* CZAppInfo.h */,
 				E339C3E21C454AFC00DEAF9B /* CZAppInfo.m */,
@@ -85,9 +88,9 @@
 		E36987241C453004004DDF90 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E369873B1C4530EC004DDF90 /* app.plist */,
-				E369873C1C4530EC004DDF90 /* buttongreen_highlighted.png */,
-				E369873D1C4530EC004DDF90 /* buttongreen.png */,
+				3AE11F861C45FCE000F3E67E /* app.plist */,
+				3AE11F871C45FCE000F3E67E /* buttongreen_highlighted.png */,
+				3AE11F881C45FCE000F3E67E /* buttongreen.png */,
 				E36987251C453004004DDF90 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -151,12 +154,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E369873E1C4530EC004DDF90 /* app.plist in Resources */,
+				3AE11F891C45FCE000F3E67E /* app.plist in Resources */,
 				E36987341C453004004DDF90 /* LaunchScreen.storyboard in Resources */,
-				E369873F1C4530EC004DDF90 /* buttongreen_highlighted.png in Resources */,
+				3AE11F8A1C45FCE000F3E67E /* buttongreen_highlighted.png in Resources */,
 				E36987311C453004004DDF90 /* Assets.xcassets in Resources */,
 				E369872F1C453004004DDF90 /* Main.storyboard in Resources */,
-				E36987401C4530EC004DDF90 /* buttongreen.png in Resources */,
+				3AE11F8D1C4602C600F3E67E /* CZAppInfoView.xib in Resources */,
+				3AE11F8B1C45FCE000F3E67E /* buttongreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
